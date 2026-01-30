@@ -35,5 +35,10 @@ namespace FredsBoats.Web.Models
 
         // Navigation for Reservations
         public ICollection<Reservation> Reservations { get; set; } = new List<Reservation>();
+
+        //Navgation Property: A boat can have a list of comments
+        public ICollection<Comment> Comments {get; set;} = new List<Comment>();
+
+
     }
 }
